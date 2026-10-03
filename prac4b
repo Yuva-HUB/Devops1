@@ -1,0 +1,46 @@
+Part (b): Configure Networking (Virtual
+Network, IP Address, and Ports)
+Step 1: Check the IP Address
+Run:
+ip addr
+or
+
+hostname -I
+Example Output:
+192.168.43.128
+This is your VM's IP address.
+
+Step 2: Understand VMware Network Modes
+Network Mode Description
+NAT VM shares the host's internet connection (recommended for beginners).
+Bridged VM gets its own IP address on the same network as the host.
+Host-only Communication only between the host and the VM; no internet access.
+Recommended: Use NAT unless your assignment specifies otherwise.
+To check or change the mode:
+1. Shut down the VM.
+2. In VMware, select the VM.
+3. Go to VM → Settings → Network Adapter.
+4. Choose NAT (or Bridged, if required).
+
+Step 3: Verify Internet Connectivity
+ping google.com
+If you receive replies, the network is working.
+
+Step 4: Check Listening Ports
+sudo ss -tuln
+or
+netstat -tuln
+Typical output:
+
+tcp LISTEN 0 128 0.0.0.0:5000
+Port 5000 is commonly used by Flask.
+
+Step 5: Firewall (if enabled)
+Allow port 5000:
+sudo ufw allow 5000
+Check the firewall status:
+sudo ufw status
+
+Result (Part b)
+The VM network is configured, the IP address is verified, and the required application port is
+available.
