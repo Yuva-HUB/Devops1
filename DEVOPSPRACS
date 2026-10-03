@@ -1,0 +1,47 @@
+practical 2 : Building a REST API with Flask or FastAPI  
+Aim:
+Building a REST API with Flask or FastAPI.
+a. Create a simple REST API using Flask or FastAPI with CRUD operations for a
+&quot;To-Do List&quot; application.
+b. Test the API using Postman or curl.
+
+practical 3 : Git Repository Management
+3a)Create a Git repository, initialize it, and add a Python project.
+3b)Demonstrate Branching and Merging Using Pull Requests
+3c)Simulate a Merge Conflict and Resolve It
+
+practical 4 : Creating and Managing a Virtual Machine 
+Creating and Managing a Virtual Machine.
+a. Set up a virtual machine on a cloud provider or locally (e.g., using VMWare or Azure).
+b. Configure networking concepts like virtual networks (Vnet), IP addresses, and ports
+c. Deploy the Flask/FastAPI app manually on the VM.
+
+practical 5 : Dockerize a Flask/FastAPI Application
+Dockerize a Flask Application
+Aim:To create a Docker image for a Flask application using a Dockerfile.
+5a)Write a Dockerfile for your Flask/FastAPI application and build a Docker image
+5b)Run the Docker Container and Test the Flask Application
+5c)Push the Docker image to Docker Hub.
+
+practical 6 : Docker Compose for Multi-Container Applications 
+Docker Compose for Multi-Container Applications.
+1. Create a docker-compose.yml file for a multi-container setup (e.g., Flask/FastAPI app +
+PostgreSQL database.
+2. Run the application using Docker Compose and test the communication between
+services.
+
+practical 7 : Setting Up CI/CD with Jenkin 
+Setting Up CI/CD with Jenkins.
+Aim: To set up Jenkins for a Flask/FastAPI application and create a CI/CD pipeline that automatically:
+Developer → GitHub → Jenkins → Build → Test → Deploy
+
+practical 8 : Monitoring and Observability with Prometheus and Grafana 
+Monitoring and Observability with Prometheus and Grafana on Windows.
+
+practical 9 : Deploy a 3-Tier Application 
+Student Management Application:
+The 3 tiers:
+
+practical 10 : Deploy a 3-Tier Application II 
+Part A: Dockerize Each Component and Use Docker Compose
+Part B: Deploy on a Virtual Machine or Local Setup
