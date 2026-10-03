@@ -1,0 +1,55 @@
+Part (c): Deploy the Flask Application
+Manually
+Step 1: Create a Project Folder
+mkdir FlaskApp
+cd FlaskApp
+
+Step 2: Create app.py
+from flask import Flask
+app = Flask(__name__)
+@app.route('/')
+def home():
+return "Hello from Ubuntu Virtual Machine!"
+if __name__ == "__main__":
+app.run(host="0.0.0.0", port=5000)
+
+Step 3: Run the Application
+python3 app.py
+Expected output:
+* Running on http://0.0.0.0:5000
+
+Step 4: Test the Application
+If you're using NAT, first test inside the VM:
+Open Firefox in Ubuntu:
+http://localhost:5000
+Output:
+Hello from Ubuntu Virtual Machine!
+If you're using Bridged or have configured NAT port forwarding, you can also access it from
+the host using:
+http://VM_IP_Address&gt;:5000
+Example:
+http://192.168.43.128:5000
+
+Step 5: Stop the Flask Server
+Press:
+Ctrl + C
+
+Project Structure
+FlaskApp/
+│
+└── app.py
+
+Architecture
+Host Computer
+(Windows + VMware)
+│
+│
+--------------------
+│
+Ubuntu Virtual Machine
+│
+Python + Flask App
+│
+Port 5000 (HTTP)
+│
+Web Browser
